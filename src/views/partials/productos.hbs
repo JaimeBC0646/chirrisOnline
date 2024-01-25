@@ -1,0 +1,38 @@
+<link rel="stylesheet" type="text/css" href="/css/digitalMenu.css">
+
+{{#if productos}}
+<div class="contentMenu">
+    {{#each productos}}
+    <div class="productCard">
+        <div class="product">
+            <div class="imgProduct">
+                <img src="/images/{{vchImage}}" alt="imgTest">
+            </div>
+
+            <div class="namePrice_Product">
+                <h2><b>{{vchNombre}}</b></h2>
+                <h3>Precio: ${{fltPrecio}}</h3>
+            </div>
+        </div>
+
+        <h4>{{vchDescripcion}}</h4>
+
+        <div class="buttons">
+            <a href="/buy/{{idProducto}}" class="btnBuy">COMPRAR AHORA</a>
+            <a href="/addBasket/{{idProducto}}" class="btnAddBasket">AGREGAR A LA CANASTA</a>
+        </div>
+
+        <!--
+        <div class="buttons">
+            <a href="/edit/{{idProducto}}" class="btnEdit">EDITAR</a>
+            <a href="/delete/{{idProducto}}" class="btnDelete">ELIMINAR</a>
+        </div>
+        -->
+    </div>
+
+    {{/each}}
+</div>
+{{else}}
+
+<h1>ERROR</h1>
+{{/if}}

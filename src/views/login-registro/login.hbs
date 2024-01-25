@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bg.css">
+    <link rel="stylesheet" href="/css/login.css">
+
+    <title>LOGIN</title>
+
+</head>
+
+<body>
+    <div class="titleMod">
+        <h1>INICIO DE SESION</h1>
+
+        <img src="/images/userIcon.png" id="frmLogin" class="icoUser" alt="userImg">
+
+        <div class="loginForm">
+
+            <form action="/checkLogin" method="POST" onsubmit="return validarFormulario()">
+                <label for="" id="txtWarning" hidden>Usuario o Contraseña incrorectos ⓘ</label>
+
+                <input type="text" name="txtIdentity" id="txtIdentity" placeholder="Usuario o correo" title="Usuario o Correo" required>
+
+                <input type="password" name="txtPassword" id="txtPassword" placeholder="Contraseña" title="Contraseña" required>
+
+                <button type="submit" id="btnlogin">INICIAR SESION</button>
+            </form>
+
+            <a href="/recuperarContrasena">Olvidaste tu contraseña?</a>
+            <a href="/registro">Aun no tienes cuenta? Crear cuenta</a>
+
+            <div class="homeLink">
+                <a href="/">
+                    <img src="/images/homeIco.png" alt="homeIco" class="homeIco">
+                    Volver al Inicio
+                </a>
+            </div>
+            <!--<button id="btnLogin">Iniciar sesion</button>-->
+        </div>
+    </div>
+
+    <!--<script src="../src/sqlMoves/loginAuth.js"></script>-->
+</body>
+
+</html>

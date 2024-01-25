@@ -1,0 +1,160 @@
+
+.titleMod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    /*border: purple solid*/
+}
+
+body{
+background-color: #CA7B42;
+background-image: url("/images/bgCoffee.png");
+font-family:'Buxton Sketch';
+}
+
+.ul-container{
+    width: 95%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    background:  #cda32f;
+    border-radius: 3rem;
+    border: solid 3px black
+}
+
+.logoChirris{
+    width: 100%;
+}
+.logoDiv{
+    width: 20%;
+    /*border: blue solid;*/
+}
+
+.funcionesPublicas{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*border: green solid;*/
+}
+
+.funcionesUsuario{
+    width: 40%;
+    /*border: red solid;*/
+}
+
+.funcionesUsuario div a{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.canasta{
+    width: 5%;
+}
+
+
+/*INICIO - NAVBAR*/
+.navbarMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*border: rgb(0, 0, 0) solid;*/
+}
+
+.sesionDiv{
+    width: 10%;
+    text-align: center;
+    background:  #ff590097;
+    border: solid 3px black;
+    border-radius: 3rem;
+    
+}
+
+.ul-container li{
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    transition: all ease-in-out 250ms;
+    color: black;
+}
+
+.ul-container li:hover{
+    background: #ff9d0a;
+    border-radius: 40px;
+}
+/*FIN - NAVBAR*/
+
+
+
+
+
+
+
+/* INICIO - TITLE & ELEMENTS */
+/*
+.titleMod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    /*border: solid  green;
+}
+
+
+.rowMain{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.btnRefresh{
+    text-decoration: none;
+    color:black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: 0.5rem;
+    border: solid;
+    border-radius: 10px;
+    background-color: rgb(221, 194, 41);
+    font-size: 1.5rem;
+    font-family:'Buxton Sketch';
+}
+
+.btnRefresh:hover{
+    font-size: 1.6rem;
+    padding: 0.6rem;
+}
+
+
+.scroll-table {   
+    max-height: 300px; /* Altura máxima para ver registros 
+    overflow-y: auto;  /* Coloca scrollbar vertical
+    /border: solid aqua
+}
+
+
+
+/*---------------------------------------------------
+
+label{
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;;
+}
+*/

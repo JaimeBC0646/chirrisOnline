@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bg.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <script src="jsCarpet/actions_Registro.js"></script>
+    <title>REGISTRO</title>
+
+    
+</head>
+
+<body>
+    <div class="titleMod">
+
+        <h1>REGISTRO</h1>
+
+        <div class="registerForm">
+
+            <form action="/registrarCliente" method="post">
+                <div class="divForm">
+
+                    <input type="text" name="txtNombre" id="txtNombre" placeholder="Nombre (s)" required>
+
+                    <input type="text" name="txtApepat" id="txtApepat" placeholder="Apellido Paterno" required>
+
+                    <input type="text" name="txtApemat" id="txtApemat" placeholder="Apellido Materno" required>
+
+                    <input type="text" name="txtUsuario" id="txtUsuario" placeholder="Nombre de Usuario" onchange="validateUser()" required>
+
+                    <input type="number" name="txtEdad" id="txtEdad" placeholder="Edad" required>
+                </div>
+
+                <div class="divForm">
+                    <input type="text" name="txtTelefono" id="txtTelefono" placeholder="No. de Telefono" required>
+
+                    <input type="email" name="txtCorreo" id="txtCorreo" placeholder="Correo" required>
+
+                    <input type="password" name="txtPassword" id="txtPassword" placeholder="Contraseña" onchange="validatePasswords()" required>
+
+                    <label for="" name="warningPass" id="warningPass" hidden>Las Contraseñas no coinciden ⓘ</label>
+
+                    <input type="password" name="txtConfirmPassword" id="txtConfirmPassword" 
+                        placeholder="Confirmar contraseña" title="La contraseña debe ser igual al campo anterior" onchange="validatePasswords()" required>
+
+                    <div class="divSexSelect">
+                        <div class="rdbOption">
+                            <input type="radio" id="rdbHombre" name="rdbSexo" value="hombre">
+                            <label class="rdb">Hombre</label>
+                        </div>
+
+                        <div class="rdbOption">
+                            <input type="radio" id="rdbMujer" name="rdbSexo" value="mujer">
+                            <label class="rdb">Mujer</label>
+                        </div>
+
+                        <div class="rdbOption">
+                            <input type="radio" id="rdbOtro" name="rdbSexo" value="otro">
+                            <label class="rdb">Otro</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" id="btnRegistro" onsubmit="validateRegistration()">REGISTRARSE</button>
+                </div>
+            </form>
+            <a href="/login">Ya tienes cuenta? Iniciar sesion</a>
+
+            <div class="homeLink">
+                <a href="/">
+                    <img src="/images/homeIco.png" alt="homeIco" class="homeIco">
+                    Volver al Inicio
+                </a>
+            </div>
+
+        </div>
+        <!--<button id="btnLogin">Iniciar sesion</button>-->
+
+    </div>
+    <!--<script src="../src/sqlMoves/loginAuth.js"></script>-->
+</body>
+
+</html>

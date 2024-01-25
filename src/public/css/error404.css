@@ -1,0 +1,52 @@
+/* style Error 404*/
+
+@font-face{
+  font-family: 'Popis';
+  src: url(../fonts/Poppins-BlackItalic.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face{
+  font-family: 'Popis2';
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+.error-404{
+  margin: 0;
+  padding: 0;
+  background-color: #EAEAEA;
+  text-align: center;
+}
+.title {
+
+  font-family:'Popis' ;
+  font-size: calc(1.2125rem + 2.55vw);
+  font-size: 65px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.contenido{
+  font-size: 23px;
+  font-family:'Popis2' ;
+ margin: 0;
+ padding: 0;
+}
+.btn {
+  margin: 20px;
+  background-color: white;
+  border-color: #250e03;
+  text-align: center;
+  color: black;
+  font-family:'Popis2' ;
+  font-size: 18px;
+  border-width: 2px;
+}
+.btn:hover{
+
+  background-color: #250e03;
+  border-color: #250e03;
+}
